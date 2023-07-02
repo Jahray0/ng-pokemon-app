@@ -25,3 +25,33 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+```
+ng-pokemon-app
+├─ .angular
+├─ .editorconfig
+├─ .git
+├─ .gitignore
+├─ angular.json
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ app
+│  │  ├─ app-routing.module.ts
+│  │  ├─ app.component.html
+│  │  ├─ app.component.scss
+│  │  ├─ app.component.ts
+│  │  ├─ app.module.ts
+│  │  ├─ mock-pokemon-list.ts
+│  │  └─ pokemon.ts
+│  ├─ assets
+│  │  └─ .gitkeep
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ main.ts
+│  └─ styles.scss
+├─ tsconfig.app.json
+├─ tsconfig.json
+└─ tsconfig.spec.json
+```
