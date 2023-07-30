@@ -9,13 +9,16 @@ import { Pokemon } from './pokemon';
 })
 export class AppComponent implements OnInit {
   pokemonsList: Pokemon[] = POKEMONS;
+  pokemonSelected: Pokemon;
 
   ngOnInit(): void {
     console.table(this.pokemonsList);
-    this.selectPokemon(this.pokemonsList[0]);
   }
 
-  selectPokemon(pokemon: Pokemon) {
-    console.log(`Vous avez cliqué sue le pokémon ${pokemon.name}`);
+  selectPokemon(pokemonId: string) {
+    const id = +pokemonId;
+    console.log(
+      `Vous avez cliqué sue le pokémon ${this.pokemonsList[id].name}`
+    );
   }
 }
