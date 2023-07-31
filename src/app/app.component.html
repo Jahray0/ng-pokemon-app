@@ -1,5 +1,9 @@
 <h1>Liste de Pokemons :</h1>
-<input type="number" (click)="selectPokemon($event)" />
+<input #input (keyup.enter)="selectPokemon(input.value)" type="number" />
+<p *ngIf="pokemonSelected">
+  Vous avez selectionné les pokémon {{ pokemonSelected.name }}
+</p>
+
 <p>{{ pokemonsList[0].name }}</p>
 <p>{{ pokemonsList[1].name }}</p>
 <p>{{ pokemonsList[2].name }}</p>
