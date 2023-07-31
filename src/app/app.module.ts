@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SurvolDirective } from './survol.directive';
 import { BorderCardDirective } from './border-card.directive';
+import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
+import { ListPokemonComponent } from './list-pokemon/list-pokemon.component';
+import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.component';
 
 //module racine de l'application
 //ou on importe les composants
@@ -13,7 +16,10 @@ import { BorderCardDirective } from './border-card.directive';
   declarations: [
     AppComponent,
     SurvolDirective,
-    BorderCardDirective
+    BorderCardDirective,
+    PokemonTypeColorPipe,
+    ListPokemonComponent,
+    DetailPokemonComponent
   ],
   imports: [
     BrowserModule,
