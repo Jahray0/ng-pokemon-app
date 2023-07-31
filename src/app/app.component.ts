@@ -15,10 +15,10 @@ export class AppComponent implements OnInit {
     console.table(this.pokemonsList);
   }
 
-  selectPokemon(pokemonId: string) {
-    const id = +pokemonId;
+  selectPokemon(event: MouseEvent) {
+    const index: number = +(event.target as HTMLInputElement).value;
     console.log(
-      `Vous avez cliqué sue le pokémon ${this.pokemonsList[id].name}`
+      `Vous avez cliqué sue le pokémon ${this.pokemonsList[index].name}`
     );
   }
 }
