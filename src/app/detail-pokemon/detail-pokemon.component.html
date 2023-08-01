@@ -47,10 +47,15 @@
           </table>
         </div>
         <div class="card-action">
-          <a>Retour</a>
+          <a (click)="goToPokemonList()">Retour</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<h4 *ngIf="!pokemon" class="center">Aucun pokémon à afficher !</h4>
+<div *ngIf="!pokemon" class="center">
+  <h4>Aucun pokémon à afficher !</h4>
+  <p routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
+    Retourner à l' accueil
+  </p>
+</div>
